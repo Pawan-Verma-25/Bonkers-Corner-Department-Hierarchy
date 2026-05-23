@@ -313,6 +313,178 @@
       to   { opacity: 1; transform: translateY(0); }
     }
     /* ─────────────────────────────────────────
+       MOBILE RESPONSIVE
+    ───────────────────────────────────────── */
+    @media (max-width: 768px) {
+      .topbar {
+        padding: 12px 20px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .topbar-brand { gap: 8px; }
+      .topbar-logo { width: 28px; height: 28px; font-size: 12px; }
+      .topbar-name { font-size: 12px; }
+      .topbar-tag { font-size: 9px; }
+      .topbar-actions { gap: 6px; width: 100%; justify-content: flex-end; }
+      .btn { padding: 6px 12px; font-size: 11px; gap: 4px; }
+      .header {
+        padding: 40px 24px 36px;
+      }
+      .header::after { width: 300px; }
+      .company-name {
+        font-size: clamp(32px, 6vw, 48px);
+        margin-bottom: 10px;
+      }
+      .doc-title {
+        font-size: clamp(16px, 2.5vw, 22px);
+        margin-bottom: 4px;
+      }
+      .header-sub {
+        font-size: 12px;
+      }
+      .header-sub span { margin: 0 6px; }
+      .stats {
+        gap: 8px;
+        margin-top: 30px;
+      }
+      .stat-card {
+        gap: 12px;
+        padding: 12px 18px;
+        border: 1px solid #0f172a;
+      }
+      .stat-num { font-size: 24px; letter-spacing: -1px; }
+      .stat-lbl { font-size: 8px; letter-spacing: 1px; }
+      .qnav {
+        padding: 10px 16px;
+        gap: 6px;
+      }
+      .qnav-label {
+        font-size: 8px;
+        margin-right: 4px;
+      }
+      .qnav-btn {
+        padding: 4px 10px;
+        font-size: 10px;
+        gap: 4px;
+      }
+      .qnav-dot { width: 5px; height: 5px; }
+      .section-label {
+        padding: 30px 20px 0;
+      }
+      .section-label p {
+        font-size: 8px;
+        letter-spacing: 2px;
+      }
+      .section-label h2 {
+        font-size: 13px;
+        margin-top: 4px;
+      }
+      .flow-scroll {
+        padding: 24px 16px 40px;
+      }
+      .hg {
+        width: 180px;
+      }
+      .hod-card {
+        padding: 10px 12px 14px;
+        border-radius: 16px;
+      }
+      .hod-tag {
+        font-size: 7px;
+        padding: 3px 10px;
+        margin-bottom: 8px;
+        letter-spacing: 2px;
+      }
+      .hod-name {
+        font-size: 16px;
+        letter-spacing: -.4px;
+      }
+      .hod-chip {
+        font-size: 9px;
+        padding: 3px 10px;
+        margin-top: 8px;
+      }
+      .connector { height: 20px; }
+      .rc {
+        padding: 10px 12px;
+        border-left: 3px solid;
+        border-radius: 9px;
+      }
+      .rc-title {
+        font-size: 11px;
+        margin-bottom: 6px;
+      }
+      .rc-av { width: 18px; height: 18px; font-size: 8px; }
+      .rc-name { font-size: 10px; }
+      .rc-note {
+        font-size: 8px;
+        padding: 2px 6px;
+        margin-top: 4px;
+      }
+      .footer {
+        padding: 20px 24px 28px;
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-brand { font-size: 14px; }
+      .footer-sub { font-size: 10px; margin-top: 2px; }
+      .footer-dots { justify-content: center; margin-top: 10px; }
+      .fd { width: 7px; height: 7px; }
+      .footer-right {
+        text-align: center;
+        font-size: 10px;
+        line-height: 1.5;
+      }
+    }
+    @media (max-width: 480px) {
+      .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .topbar-brand { width: 100%; }
+      .topbar-actions { width: 100%; gap: 4px; }
+      .btn { flex: 1; justify-content: center; padding: 5px 8px; }
+      .header { padding: 30px 16px 28px; }
+      .header::after { width: 200px; height: 1px; }
+      .company-name {
+        font-size: clamp(28px, 5vw, 40px);
+        margin-bottom: 8px;
+      }
+      .doc-title {
+        font-size: clamp(14px, 2vw, 18px);
+        margin-bottom: 3px;
+      }
+      .header-sub {
+        font-size: 11px;
+      }
+      .stats {
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 10px;
+      }
+      .stat-card {
+        width: 100%;
+        gap: 12px;
+      }
+      .qnav {
+        padding: 8px 12px;
+        gap: 4px;
+      }
+      .qnav-label {
+        display: none;
+      }
+      .qnav-btn {
+        padding: 3px 8px;
+        font-size: 9px;
+        border-radius: 20px;
+      }
+      .hg { width: 160px; }
+      .hod-name { font-size: 14px; }
+      .rc-title { font-size: 10px; }
+      .footer { padding: 16px 12px 20px; }
+      .footer-brand { font-size: 12px; }
+    }
+    /* ─────────────────────────────────────────
        PRINT
     ───────────────────────────────────────── */
     @media print {
