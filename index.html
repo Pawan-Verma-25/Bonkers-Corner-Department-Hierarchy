@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hierarchy &amp; Responsibility Matrix – Bonkers Corner</title>
+  <title>Department Hierarchy &amp; Responsibility Matrix – Bonkers Corner</title>
   <meta name="description" content="Professional organizational hierarchy and responsibility matrix for Bonkers Corner." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -78,6 +78,12 @@
       box-shadow: 0 2px 12px rgba(37,99,235,.35);
     }
     .btn-primary:hover { box-shadow: 0 4px 20px rgba(37,99,235,.45); transform: translateY(-1px); }
+    .btn-yellow {
+      background: linear-gradient(135deg,#fbbf24,#f59e0b);
+      border-color: transparent; color: #fff;
+      box-shadow: 0 2px 12px rgba(217,119,6,.35);
+    }
+    .btn-yellow:hover { box-shadow: 0 4px 20px rgba(217,119,6,.45); transform: translateY(-1px); }
     /* ─────────────────────────────────────────
        HEADER
     ───────────────────────────────────────── */
@@ -327,7 +333,7 @@
     </div>
   </div>
   <div class="topbar-actions">
-    <button class="btn btn-ghost" onclick="window.print()">🖨️&nbsp; Print / Export PDF</button>
+    <button class="btn btn-yellow" onclick="window.print()">🖨️&nbsp; Print / Export PDF</button>
     <button class="btn btn-primary" onclick="document.getElementById('flow-scroll').scrollIntoView({behavior:'smooth'})">📊&nbsp; View Flow</button>
   </div>
 </div>
